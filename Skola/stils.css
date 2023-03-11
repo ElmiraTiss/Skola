@@ -32,7 +32,7 @@
   /* Style the list inside the menu */
   nav ul {
     list-style-type: none;
-    background: url("images/skola.jpg") center no-repeat scroll;
+    background: url("images/skola.jpg") center no-repeat fixed;
     background-size: cover;
     padding: 0px;
     margin: 0px;
