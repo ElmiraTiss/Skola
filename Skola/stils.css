@@ -28,11 +28,11 @@
     flex: 1;
     background: #242e66;
   }
-  
+
   /* Style the list inside the menu */
   nav ul {
     list-style-type: none;
-    background: url("images/skola.jpg") center no-repeat fixed;
+    background: url("images/skola.jpg") center no-repeat scroll;
     background-size: cover;
     padding: 0px;
     margin: 0px;
@@ -45,7 +45,7 @@
   #background {
     background-color: white;
     filter: opacity(50%);
-  }
+    }
 
   .uhh {
     filter: opacity(150%);
