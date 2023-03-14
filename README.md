@@ -1,3 +1,0 @@
-# Skola
-Skola
-Abrakadabra
