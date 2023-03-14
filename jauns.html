@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Gaidot dzimšanas dienu..</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="stils.css">
+    </header>
+    <body>
+        <h1><strong>Gaidot dzimšanas dienu..</strong></h1>
+        <br>
+        <div id="form">
+            <form>
+                <p>Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena</p>
+                <br>
+                <label for="gads">gads</label><br>
+                <input type="text" id="gads" name="gads"><br>
+
+                <label for="menesis">mēnesis</label><br>
+                <input type="text" id="menesis" name="menesis"><br>
+
+                <label for="datums">diena</label><br>
+                <input type="text" id="datums" name="datums"><br>
+
+                <input type="button" value="Aprēķināt dienu
+                skaitu līdz dzimšanas dienai" name="poga" onClick="hey()"><br>
+
+                <p>Līdz svētkiem atlikušas</p>
+                <input type="text" name="dienas" id="dienas">
+                <p>dienas : </p>
+            </form>
+        </div>
+    
+        <script>
+            // Your birthday
+            function hey() {
+                let gads = document.getElementById("gads").value
+                let menesis = document.getElementById("menesis").value
+                let datums = document.getElementById("datums").value
+
+                var birthday = new Date(gads, menesis, datums);
+
+                var today = new Date();
+
+            //Set current year or the next year if you already had birthday this year
+                birthday.setFullYear(today.getFullYear());
+                    if (today > birthday) {
+                        birthday.setFullYear(today.getFullYear() + 1);
+                }
+                console.log("say");
+            //Calculate difference between days
+                document.getElementById("dienas").value=Math.floor((birthday - today) / (1000*60*60*24));
+            }
+
+        </script>
+    </body>
+</html>
