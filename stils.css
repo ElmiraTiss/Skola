@@ -27,13 +27,13 @@
     -ms-flex: 1;
     flex: 1;
     background: #242e66;
+    background: url("images/skola.jpg") center repeat scroll;
+    background-size: contain;
   }
 
   /* Style the list inside the menu */
   nav ul {
     list-style-type: none;
-    background: url("images/skola.jpg") center no-repeat scroll;
-    background-size: cover;
     padding: 0px;
     margin: 0px;
   }
