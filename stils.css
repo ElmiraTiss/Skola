@@ -41,17 +41,7 @@
   #list {
     padding: 20px;
   }
-  
-  #background {
-    background-color: white;
-    filter: opacity(50%);
-    }
-
-  .uhh {
-    filter: opacity(150%);
-  }
-
-  /* Style the content */
+   /* Style the content */
   article {
     -webkit-flex: 3;
     -ms-flex: 3;
